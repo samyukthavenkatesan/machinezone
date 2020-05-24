@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Machine Maniacs</title>
+<meta name="viewport" content="width=device-width,initial scale=1">
+<style>
+body{
+   background-image:url("image1.jpg");
+   background-size: cover;
+}
+nav {
+  float: left;
+  width: 15%;
+  height: 1000px;
+  background-color:#99A3A4;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: lightblue;
+}
+
+.active {
+  background-color: lightblue;
+}
+.form{
+   text-align:center;
+}
+input[type=text], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=button] {
+  width: 10%;
+  padding: 14px 20px;
+  
+}
+.move {
+  width: 500px;
+  height: 50px;
+  background-color: lightblue;
+  font-weight: bold;
+  color : black;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  from {left:200px;}
+  to {left: 1000px;}
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:DodgerBlue;
+  color:lightblue;
+  font-size : 25px;
+}
+
+</style>
+</head>
+<body>
+<header>
+<img src = "image2.jpg" alt = "Company logo" style = "float:left; width:50px; height:50px">
+MACHINE MANIACS
+<img src = "image2.jpg" alt = "Company logo" style = "float:right; width:50px; height:50px">
+</header>
+<section>
+<nav>
+<button onclick="document.getElementById('myImage').src='motorrun.gif'">Turn on the motor</button>
+
+<img id="myImage" src="motorstop.jpg" style="width:200px; float:center">
+
+<button onclick="document.getElementById('myImage').src='motorstop.jpg'">Turn off the motor</button>
+<p style="color:blue; font-size:17px; font-family:cursive">An electric motor is an electrical machine that converts electrical energy into mechanical energy. Most electric motors operate through the interaction between the motor's magnetic field and electric current in a wire winding to generate force in the form of torque applied on the motor's shaft. Electric motors can be powered by direct current (DC) sources, such as from batteries, motor vehicles or rectifiers, or by alternating current (AC) sources, such as a power grid, inverters or electrical generators. An electric generator is mechanically identical to an electric motor, but operates with a reversed flow of power, converting mechanical energy into electrical energy.
+</p>
+</nav>
+
+</section>
+<ul>
+  <li><a class="active" href="home.htm">HOME</a></li>
+  <li><a href="HTML Project.html">DC MACHINES</a></li>
+  <li><a href="html.html">INDUCTION MACHINES</a></li>
+  <li><a href="main1.html"\>SYNCHRONOUS MACHINES</a></li>
+  <li><a href="special.html">SPECIAL MACHINES</a></li>
+</ul>
+<div class = "move">
+<p style = "font-size:20px"><a href = "form2.html">Click here to win exciting prices</a></p>
+</div>
+<div class = "form">
+<form action="/action_page.php">
+  <h5 style = "color:lightblue; font-size:25px">User Name:</h5><br>
+  <input type="text" id="username" class = "form-control" name="username"><br>
+  <h5 style = "color:lightblue; font-size:25px">Password:</h5><br>
+  <input type="password" id="pwd" class = "form-control" name="pwd"><br><br>
+  <input type="button" value = "Submit">
+</form>
+</div>
+
+
+<a href = "form.html">
+<h3 style ="color:white; font-family:cursive; text-align:center">Click here to Register</h5>
+</a>
+<div>
+</h3>
+<div class = "footer">
+<h3> Contact Information</h3>
+<h2>Email id : </h3> <p>machinemaniacs@gmail.com</p><br>
+<h2>Phone Number : </h3> <p> 9786748591 </p>
+</div> 
+</body>
+</html>
